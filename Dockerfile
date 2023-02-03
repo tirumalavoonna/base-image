@@ -3,6 +3,6 @@ FROM base as builder
 
 COPY requirements.txt /app/python/requirements.txt
 COPY install-pyrequirements.sh .
-RUN /bin/sh install-pyrequirements.sh && \
-    apt-get update && \
-    apt remove -y curl
+RUN apt-get update && \
+    apt remove -y curl && \
+    /bin/sh install-pyrequirements.sh
