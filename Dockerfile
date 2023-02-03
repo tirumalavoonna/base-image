@@ -3,4 +3,4 @@ FROM base as builder
 
 COPY requirements.txt /app/python/requirements.txt
 COPY install-pyrequirements.sh .
-RUN ./install-pyrequirements.sh
+RUN /bin/sh install-pyrequirements.sh
