@@ -3,8 +3,6 @@ FROM base as builder
 
 COPY requirements.txt /app/python/requirements.txt
 
-RUN python3 -m venv venv && \
-    source /venv/bin/activate && \
-    python3 -m pip install --upgrade pip && \
+RUN python3 -m pip install --upgrade pip && \
     python3 -m pip install --no-cache-dir cython && \
     python3 -m pip install --no-cache-dir -r /app/python/requirements.txt
