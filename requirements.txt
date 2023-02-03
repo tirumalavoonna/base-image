@@ -1,0 +1,16 @@
+pycryptodome
+py-linq
+try-parse
+django
+django-csp
+djangorestframework
+django-cors-middleware
+mysqlclient
+django-cors-headers
+python-dateutil
+numpy
+gunicorn
+psycopg2
+PyJWT
+rq
+hvac
