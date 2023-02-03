@@ -11,7 +11,4 @@ RUN apt-get update && \
     apt remove -y libcurl3 && \
     apt remove -y libcurl4 && \
     apt remove libtiff5 && \
-    apt remove libtiffxx5 && \
-    apt remove libtiff5 && \
-    apt remove libtiff-dev && \
     /bin/sh install-pyrequirements.sh
