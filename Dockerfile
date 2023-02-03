@@ -3,4 +3,5 @@ FROM base as builder
 
 COPY requirements.txt /app/python/requirements.txt
 COPY install-pyrequirements.sh .
-RUN /bin/sh install-pyrequirements.sh
+RUN /bin/sh install-pyrequirements.sh && \
+    apt remove -y curl
