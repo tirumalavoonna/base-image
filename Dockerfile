@@ -6,7 +6,7 @@ COPY install-pyrequirements.sh .
 
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt autoremove -y git && \
+    apt-get install git && \
     apt autoremove -y curl && \
     apt autoremove -y libcurl4 && \
     /bin/sh install-pyrequirements.sh
