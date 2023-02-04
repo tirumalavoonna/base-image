@@ -10,5 +10,5 @@ RUN apt-get update && \
     apt autoremove -y libcurl4 && \
     apt autoremove -y libaom0 && \
     apt autoremove -y libbluetooth-dev && \
-    apt autoremove -y imagemagick-6.q16 && \
+    apt autoremove -y imagemagick-6-common && \
     /bin/sh install-pyrequirements.sh
