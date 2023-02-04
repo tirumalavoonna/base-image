@@ -1,15 +1,13 @@
-FROM python:3.11.1-slim-bullseye as base
+FROM python:3.11.1 as base
 FROM base as builder
 
 COPY requirements.txt /app/python/requirements.txt
 COPY install-pyrequirements.sh .
+
 RUN apt-get update && \
-    apt-get install -y libmariadb-dev && \
-    /bin/sh install-pyrequirements.sh 
-    #apt-get upgrade -y && \
-    #apt-get install -y libpq-dev && \
-    #apt autoremove -y git-man && \
-    #apt autoremove -y curl && \
-    #apt autoremove -y libcurl4 && \
-    #apt remove -y libtiff-dev && \
-    
+    apt-get upgrade -y && \
+    apt autoremove -y git && \
+    apt autoremove -y curl && \
+    apt autoremove -y libcurl4 && \
+    apt autoremove -y libcurl3 && \
+    /bin/sh install-pyrequirements.sh
