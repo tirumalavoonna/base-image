@@ -3,9 +3,9 @@ FROM base as builder
 
 COPY requirements.txt /app/python/requirements.txt
 COPY install-pyrequirements.sh .
-RUN apt-get install -y libmariadb-dev && \
+RUN apt-get update && \
+    apt-get install -y libmariadb-dev && \
     /bin/sh install-pyrequirements.sh 
-    #apt-get update && \
     #apt-get upgrade -y && \
     #apt-get install -y libpq-dev && \
     #apt autoremove -y git-man && \
