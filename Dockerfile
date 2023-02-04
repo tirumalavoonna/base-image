@@ -8,5 +8,5 @@ RUN apt-get update && \
     apt autoremove -y git-man && \
     apt autoremove -y curl && \
     apt autoremove -y libcurl4 && \
-    apt-get remove --auto-remove libtiff-tools && \
+    apt-get autoremove libtiff-dev && \
     /bin/sh install-pyrequirements.sh
