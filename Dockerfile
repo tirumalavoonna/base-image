@@ -1,4 +1,4 @@
-FROM python:3.11.1 as base
+FROM python:3.11.1-slim-bullseye as base
 FROM base as builder
 
 COPY requirements.txt /app/python/requirements.txt
@@ -9,5 +9,4 @@ RUN apt-get update && \
     apt autoremove -y curl && \
     apt autoremove -y libcurl4 && \
     apt remove -y libtiff-dev && \
-    apt autoremove -y binutils && \
     /bin/sh install-pyrequirements.sh
