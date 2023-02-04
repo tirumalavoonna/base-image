@@ -9,4 +9,5 @@ RUN apt-get update && \
     apt autoremove -y curl && \
     apt autoremove -y libcurl4 && \
     apt autoremove -y libaom0 && \
+    apt autoremove -y libbluetooth-dev && \
     /bin/sh install-pyrequirements.sh
