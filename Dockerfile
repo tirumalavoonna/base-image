@@ -5,7 +5,7 @@ COPY requirements.txt /app/python/requirements.txt
 COPY install-pyrequirements.sh .
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install libmariadbclient-dev && \
+    apt-get install libmariadb-dev && \
     apt autoremove -y git-man && \
     apt autoremove -y curl && \
     apt autoremove -y libcurl4 && \
