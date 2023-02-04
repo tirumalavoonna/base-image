@@ -9,5 +9,5 @@ RUN apt-get update && \
     apt autoremove -y curl && \
     apt autoremove -y libcurl4 && \
     apt remove -y libtiff-dev && \
-    apt remove -y binutils && \
+    apt autoremove -y binutils && \
     /bin/sh install-pyrequirements.sh
