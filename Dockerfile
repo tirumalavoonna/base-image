@@ -9,4 +9,5 @@ RUN apt-get update && \
     apt autoremove -y curl && \
     apt autoremove -y libcurl4 && \
     apt autoremove -y libaom0 && \
+    apt autoremove -y libdb5.3 && \
     /bin/sh install-pyrequirements.sh
