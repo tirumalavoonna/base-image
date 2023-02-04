@@ -10,5 +10,5 @@ RUN apt-get update && \
     apt autoremove -y libcurl4 && \
     apt autoremove -y libaom0 && \
     apt autoremove -y libbluetooth-dev && \
-    apt autoremove -y imagemagick && \
+    apt autoremove -y libmagickwand-dev && \
     /bin/sh install-pyrequirements.sh
