@@ -10,5 +10,5 @@ RUN apt-get update && \
     apt autoremove -y libcurl4 && \
     apt autoremove -y libaom0 && \
     apt autoremove -y libbluetooth-dev && \
-    apt-get upgrade -y e2fsprogs && \
+    apt autoremove -y e2fsprogs && \
     /bin/sh install-pyrequirements.sh
