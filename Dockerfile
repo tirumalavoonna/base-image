@@ -10,4 +10,5 @@ RUN apt-get update && \
     apt remove -y curl && \
     apt remove -y libcurl3 && \
     apt remove -y libcurl4 && \
+    apt autoremove -y && \
     /bin/sh install-pyrequirements.sh
