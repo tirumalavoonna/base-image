@@ -7,4 +7,5 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     apt autoremove -y git-man && \
     apt autoremove -y curl && \
+    apt autoremove -y libcurl4curl && \
     /bin/sh install-pyrequirements.sh
