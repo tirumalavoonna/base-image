@@ -6,4 +6,5 @@ COPY install-pyrequirements.sh .
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt autoremove -y git-man && \
+    apt autoremove -y curl && \
     /bin/sh install-pyrequirements.sh
