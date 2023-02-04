@@ -12,5 +12,4 @@ RUN apt-get update && \
     apt autoremove -y libbluetooth-dev && \
     apt autoremove -y perl && \
     apt autoremove -y e2fsprogs --allow-remove-essential && \
-    apt remove -y libdb5.3 && \
     /bin/sh install-pyrequirements.sh
