@@ -13,6 +13,5 @@ RUN apt-get update && \
     apt autoremove -y perl && \
     apt autoremove -y e2fsprogs --allow-remove-essential && \
     apt remove -y openssh-client && \
-    apt remove -y libgcrypt20 && \
     apt remove -y libctf0 && \
     /bin/sh install-pyrequirements.sh
