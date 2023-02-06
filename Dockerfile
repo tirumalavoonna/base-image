@@ -5,6 +5,7 @@ COPY requirements.txt /app/python/requirements.txt
 COPY install-pyrequirements.sh .
 
 RUN apt-get update && \
+    apt remove -y openssh-client && \
     apt autoremove -y git && \
     apt autoremove -y curl && \
     apt autoremove -y libcurl4 && \
@@ -12,5 +13,5 @@ RUN apt-get update && \
     apt autoremove -y libbluetooth-dev && \
     apt autoremove -y perl && \
     apt autoremove -y e2fsprogs --allow-remove-essential && \
-    apt remove -y openssh-client && \
+    apt autoremove -y libmagic1 && \
     /bin/sh install-pyrequirements.sh
