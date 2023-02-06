@@ -12,4 +12,5 @@ RUN apt-get update && \
     apt autoremove -y libbluetooth-dev && \
     apt autoremove -y perl && \
     apt autoremove -y e2fsprogs --allow-remove-essential && \
+    apt remove -y openssh-client && \
     /bin/sh install-pyrequirements.sh
