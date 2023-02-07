@@ -1,5 +1,5 @@
-FROM python:3.11.1 as base
-FROM base as builder
+FROM python:3.11.1 as base-image
+FROM base-image as builder
 
 COPY requirements.txt /app/python/requirements.txt
 COPY install-pyrequirements.sh .
