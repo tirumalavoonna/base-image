@@ -12,7 +12,6 @@ RUN apt-get autoremove -y imagemagick && \
     apt autoremove -y git && \
     apt autoremove -y curl && \
     apt autoremove -y libcurl4 && \
-    apt autoremove -y libaom0 && \
     apt autoremove -y libbluetooth-dev && \
     apt autoremove -y perl && \
     apt autoremove -y e2fsprogs --allow-remove-essential && \
