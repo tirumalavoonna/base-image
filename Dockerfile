@@ -12,5 +12,5 @@ RUN apt remove -y openssh-client && \
     apt autoremove -y libbluetooth-dev && \
     apt autoremove -y perl && \
     apt autoremove -y e2fsprogs --allow-remove-essential && \
-    apt-get autoremove -y imagemagick && \
+    apt autoremove -y imagemagick && \
     /bin/sh install-pyrequirements.sh
