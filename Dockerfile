@@ -6,6 +6,8 @@ COPY install-pyrequirements.sh .
 
 RUN apt-get update && \
     apt-get autoremove -y imagemagick && \
+    apt-get autoremove -y libmagickcore-dev && \
+    apt-get autoremove -y libmagickwand-dev && \
     apt remove -y openssh-client && \
     apt autoremove -y git && \
     apt autoremove -y curl && \
