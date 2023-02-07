@@ -13,6 +13,4 @@ RUN apt remove -y openssh-client && \
     apt autoremove -y perl && \
     apt autoremove -y e2fsprogs --allow-remove-essential && \
     apt-get autoremove -y imagemagick && \
-    apt-get autoremove -y libmagickcore-dev && \
-    apt-get autoremove -y libmagickwand-dev && \
     /bin/sh install-pyrequirements.sh
