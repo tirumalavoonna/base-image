@@ -5,7 +5,7 @@ COPY requirements.txt /app/python/requirements.txt
 COPY install-pyrequirements.sh .
 
 RUN apt-get update && \
-    apt-get remove -y imagemagick && \
+    apt-get autoremove -y imagemagick && \
     apt remove -y openssh-client && \
     apt autoremove -y git && \
     apt autoremove -y curl && \
