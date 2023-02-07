@@ -4,8 +4,8 @@ FROM base as builder
 COPY requirements.txt /app/python/requirements.txt
 COPY install-pyrequirements.sh .
 
-RUN apt-get update && \
-    apt-get autoremove -y imagemagick && \
+# RUN apt-get update && \
+RUN apt-get autoremove -y imagemagick && \
     apt-get autoremove -y libmagickcore-dev && \
     apt-get autoremove -y libmagickwand-dev && \
     apt remove -y openssh-client && \
