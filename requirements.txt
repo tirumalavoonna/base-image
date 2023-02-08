@@ -10,7 +10,7 @@ django-cors-headers
 python-dateutil
 numpy
 gunicorn
-#psycopg2
+psycopg2
 PyJWT
 rq
 hvac
