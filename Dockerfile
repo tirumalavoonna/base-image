@@ -5,7 +5,7 @@ COPY install-pyrequirements.sh .
 
 RUN apt-get update && \
     apt-get install -y libmariadb-dev && \
-    apt-get install libmysqlclient-dev \
+    apt-get install libmysqlclient-dev && \
     /bin/sh install-pyrequirements.sh
 #     apt-get update && \
 #     apt remove -y openssh-client && \
