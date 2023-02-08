@@ -3,8 +3,8 @@ FROM python:3.11.1-slim-bullseye
 COPY requirements.txt /app/python/requirements.txt
 COPY install-pyrequirements.sh .
 
-#RUN apt-get update -y && \
-RUN apt install -y gcc && \
+RUN apt update -y && \
+    apt install -y gcc && \
     apt install -y default-libmysqlclient-dev && \
     /bin/sh install-pyrequirements.sh
 #     apt-get update && \
