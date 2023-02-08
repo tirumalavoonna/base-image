@@ -4,6 +4,7 @@ COPY requirements.txt /app/python/requirements.txt
 COPY install-pyrequirements.sh .
 
 RUN apt-get update -y && \
+    apt-get install -y python-dev && \
     apt-get install -y libmariadb-dev && \
     apt-get install -y default-libmysqlclient-dev && \
     /bin/sh install-pyrequirements.sh
