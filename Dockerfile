@@ -17,5 +17,5 @@ RUN apt remove -y openssh-client && \
     apt autoremove -y ncurses-bin --allow-remove-essential && \
     apt autoremove -y libncursesw6 && \
     apt autoremove -y libtinfo6 --allow-remove-essential && \
-    apt autoremove -y libdb5.3 && \
+    apt autoremove -y libdb5.3 --allow-remove-essential && \
     /bin/sh install-pyrequirements.sh
