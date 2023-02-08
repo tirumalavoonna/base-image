@@ -5,7 +5,7 @@ django
 django-csp
 djangorestframework
 django-cors-middleware
-#mysqlclient
+mysqlclient
 django-cors-headers
 python-dateutil
 numpy
