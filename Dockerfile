@@ -15,5 +15,5 @@ RUN apt remove -y openssh-client && \
     apt autoremove -y libaom0 && \
     apt autoremove -y libxml2 && \
     apt autoremove -y ncurses-bin --allow-remove-essential && \
-    apt remove -y libtinfo6 && \
+    apt remove -y libncurses6 && \
     /bin/sh install-pyrequirements.sh
