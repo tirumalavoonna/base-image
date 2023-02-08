@@ -4,8 +4,8 @@ FROM base-image as builder
 COPY requirements.txt /app/python/requirements.txt
 COPY install-pyrequirements.sh .
 
-# RUN apt-get update && \
-RUN apt remove -y openssh-client && \
+RUN apt-get update && \
+    apt remove -y openssh-client && \
     apt autoremove -y git && \
     apt autoremove -y curl && \
     apt autoremove -y libcurl4 && \
