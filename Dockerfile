@@ -5,7 +5,6 @@ COPY install-pyrequirements.sh .
 
 RUN apt-get update -y && \
     apt-get install -y gcc && \
-    apt-get install -y libmariadb-dev && \
     apt-get install -y default-libmysqlclient-dev && \
     /bin/sh install-pyrequirements.sh
 #     apt-get update && \
