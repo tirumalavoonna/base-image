@@ -3,7 +3,8 @@ FROM python:3.11.1-slim-bullseye
 COPY requirements.txt /app/python/requirements.txt
 COPY install-pyrequirements.sh .
 
-RUN apt-get install -y libmariadb-dev && \
+RUN apt-get update -y && \
+    apt-get install -y libmariadb-dev && \
     apt-get install -y default-libmysqlclient-dev && \
     /bin/sh install-pyrequirements.sh
 #     apt-get update && \
