@@ -1,4 +1,4 @@
-FROM python:3.11.2-slim-bullseye
+FROM 3.12.0a5-slim-bullseye
 
 COPY requirements.txt .
 
