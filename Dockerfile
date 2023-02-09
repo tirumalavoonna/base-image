@@ -1,4 +1,4 @@
-FROM 3.12.0a5-slim-bullseye
+FROM 3.12.0a5-bullseye
 
 COPY requirements.txt .
 
