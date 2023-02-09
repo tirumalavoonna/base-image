@@ -5,8 +5,7 @@ COPY requirements.txt .
 RUN set -eux; \
     \
     apt-get update; \
-    apt-get upgrade -y; \
-    apt-get install -y --no-install-recommends \
+    apt-get upgrade -y; apt-get install -y --no-install-recommends \
         gcc \
     	libpq-dev \
         default-libmysqlclient-dev; \
