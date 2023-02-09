@@ -5,7 +5,8 @@ COPY requirements.txt requirements.txt
 RUN set -eux; \
     apt-get update; \
     apt-get upgrade -y; \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    apt-get install -y --no-install-recommends \
+        apt-utils \
         gcc \
     	libpq-dev \
         default-libmysqlclient-dev; \
