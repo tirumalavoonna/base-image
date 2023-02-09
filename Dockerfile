@@ -170,7 +170,7 @@ RUN set -eux; \
 	; \
 	rm -f get-pip.py; \
 	\
-	pip --version
-    pip install -r requirements.txt
+	pip --version \
+    	pip install -r requirements.txt
 
 CMD ["python3"]
