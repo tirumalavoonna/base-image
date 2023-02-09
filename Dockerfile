@@ -10,6 +10,6 @@ RUN set -eux; \
         gcc \
     	libpq-dev \
         default-libmysqlclient-dev; \
-    pip install --upgrade pip; \ 
-    pip install --no-cache-dir --root-user-action=ignore -r /app/python/requirements.txt \
+    pip install --root-user-action=ignore --upgrade pip; \ 
+    pip install --root-user-action=ignore --no-cache-dir -r /app/python/requirements.txt \
     ; \
