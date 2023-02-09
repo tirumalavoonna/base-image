@@ -10,4 +10,3 @@ RUN set -eux; \
         default-libmysqlclient-dev \
     ; \    
     python -m pip install --no-cache-dir -r /app/python/requirements.txt
-    \
