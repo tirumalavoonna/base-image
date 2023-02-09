@@ -1,6 +1,6 @@
 FROM python:3.11.2-slim-bullseye
 
-COPY requirements.txt /app/python/requirements.txt
+COPY requirements.txt .
 
 RUN set -eux; \
     \
@@ -10,6 +10,6 @@ RUN set -eux; \
         gcc \
     	libpq-dev \
         default-libmysqlclient-dev; \
-    pip install --root-user-action=ignore --upgrade pip; \ 
-    pip install --root-user-action=ignore --no-cache-dir -r /app/python/requirements.txt \
+    pip install --root-user-action=ignore --no-cache-dir --upgrade pip; \ 
+    pip install --root-user-action=ignore --no-cache-dir -r requirements.txt \
     ; \
