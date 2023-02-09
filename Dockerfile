@@ -11,8 +11,6 @@
 
 FROM debian:bullseye-slim
 
-COPY requirements.txt
-
 # ensure local python is preferred over distribution python
 ENV PATH /usr/local/bin:$PATH
 
