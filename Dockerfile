@@ -2,8 +2,6 @@ FROM python:3.11.2-slim-bullseye
 
 COPY requirements.txt /app/python/requirements.txt
 
-ENV PIP_VERSION 23.0
-
 RUN set -eux; \
     \
     apt-get update; \
@@ -15,6 +13,7 @@ RUN set -eux; \
     ; \
     \
     python --no-cache-dir \
-           "pip==$PIP_VERSION" \
+            --no-compile \
+            pip install --upgrade pip \
             pip install  -r /app/python/requirements.txt \
     ; \
