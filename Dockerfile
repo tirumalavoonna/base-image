@@ -1,4 +1,4 @@
-FROM python:3.12.0a5-slim-bullseye
+FROM python:3.11.2-slim-bullseye
 
 COPY requirements.txt requirements.txt 
 
@@ -10,6 +10,5 @@ RUN set -eux; \
         gcc \
     	libpq-dev \
         default-libmysqlclient-dev; \
-    pip install --upgrade pip --no-cache-dir --root-user-action=ignore; \ 
     pip install -r requirements.txt --no-cache-dir --root-user-action=ignore \
     ; \
