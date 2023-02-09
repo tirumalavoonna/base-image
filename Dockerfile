@@ -9,11 +9,7 @@ RUN set -eux; \
     apt-get install -y --no-install-recommends \
         gcc \
     	libpq-dev \
-        default-libmysqlclient-dev \
-    ; \
-    \
-    python --no-cache-dir \
-            --no-compile \
-            pip install --upgrade pip \
-            pip install  -r /app/python/requirements.txt \
+        default-libmysqlclient-dev; \
+    pip install --upgrade pip; \ 
+    pip install --no-cache-dir -r /app/python/requirements.txt \
     ; \
