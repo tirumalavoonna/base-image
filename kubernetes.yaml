@@ -1,0 +1,27 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: iegp-config-api
+  namespace: iegp
+  labels:
+    app: iegp-config-api
+spec:
+  imagePullSecrets:
+    - name: my-registry
+  replicas: 1
+  selector:
+    matchLabels:
+      app: iegp-config-api
+  template:
+    metadata:
+      labels:
+        app: iegp-config-api
+    spec:
+      containers:
+        - name: iegp-config-api
+          image: >-
+            infyartifactory.ad.infosys.com/icets-iegp/leap-iegp/iegp_config_api:v6
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+          imagePullPolicy: Always
