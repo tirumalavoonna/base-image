@@ -1,16 +1,17 @@
-pycryptodome
-py-linq
-try-parse
-django
-django-csp
-djangorestframework
-django-cors-middleware
-mysqlclient
-django-cors-headers
-python-dateutil
-numpy
-gunicorn
-psycopg2
-PyJWT
-rq
-hvac
+pycryptodome == 3.19.0
+py-linq == 1.3.0
+try-parse == 0.0.9
+django == 4.2.7
+django-csp == 3.7
+djangorestframework == 3.14.0
+django-cors-middleware == 1.5.0
+mysqlclient == 2.1.1
+django-cors-headers == 4.3.0
+python-dateutil == 2.8.2
+numpy == 1.26.1
+gunicorn == 21.2.0
+psycopg2 == 2.9.9
+PyJWT == 2.8.0
+rq == 1.15.1
+hvac == 1.1.1
+jsonschema == 4.19.2
